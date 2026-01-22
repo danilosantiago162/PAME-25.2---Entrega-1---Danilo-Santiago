@@ -1,4 +1,14 @@
+header{
+    background-color: black;
+    padding: 12px;
+}
+
 .background {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: fixed;
     inset: 0;
     background:
@@ -8,6 +18,7 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
+    
     
 }
 
@@ -25,3 +36,63 @@
     color:white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.box {
+    align-items: center;
+    width: 300px;
+    
+    background: rgba(0,0,0,0.85);
+    padding: 30px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+}
+
+.box input{
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    background: #333;
+    color: white;
+    width: 200px;
+}
+
+.box input::placeholder{
+    color:#aaa;
+    width: 200px;
+}
+
+.box button{
+    padding: 12px;
+    background: orange;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    width: 200px;
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.cadastrar{
+    color: white;
+}
+.descricao{
+    color: white;
+    font-size: 0.9rem;
+}
+
+
