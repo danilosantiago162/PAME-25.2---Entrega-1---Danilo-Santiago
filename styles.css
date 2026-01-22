@@ -86,7 +86,7 @@ body {
     color: white;
 }
 
-.opcoes{
+.opcao{
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
@@ -103,6 +103,11 @@ body {
     color: white;
     font-size: 0.9rem;
     width: 100%;
+}
+
+.box p{
+    color: white;
+    
 }
 
 

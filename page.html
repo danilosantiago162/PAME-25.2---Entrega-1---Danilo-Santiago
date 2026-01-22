@@ -9,6 +9,8 @@
 </head>
 <body>
 
+    <!--Header da página divs diferentes para coloração diferente-->
+
     <header>
             <div class="cabecalho">
                 <div class="fluxo">FLUXO</div>
@@ -16,27 +18,45 @@
             </div>
         </header>
 
+    <!--Tudo dentro do background ficará sobre a imagem escolhida-->
+
     <div class="background">
+
+        <!--box central contendo opções para login, cadastro, esqueceu a senha, lembre-se de mim e descrição-->
+
         <div class="box">
+
+            <!--Titulo Entrar-->
             <h2 class="titulo">Entrar</h2>
+
+            <!--Regiões para Login: email e senha-->
             <input type="text" placeholder="Email ou número de celular">
             <input type="password" placeholder="Senha">
 
+            <!--Botão Entrar-->
             <button>Entrar</button>
 
-            <div class="opcoes">
+            <!--div para opção: Lembrar de mim-->
+            <div class="opcao">
+
+                <!--pequena box para confirmar opção: lembrar de mim-->
                 <label>
                     <input type="checkbox">
                 </label>
+
+                <!--div após para texto vir ao lado do checkbox-->
                 <div>Lembre-se de mim</div>
             </div>
 
+            <!--link no caso de esquecimento de senha-->
             <a href="#">Esqueceu a senha?</a>
 
+            <!--parágrafo seguido de link para cadastro-->
             <p class="cadastrar">
                 Novo por aqui? <a href="#">Assine agora</a>
             </p>
 
+            <!--descrição ao final do box-->
             <p>Descrição</p>
 
             <p class="descricao">
