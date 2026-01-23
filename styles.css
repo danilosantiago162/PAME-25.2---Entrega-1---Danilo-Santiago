@@ -115,6 +115,11 @@ body {
     width: 100%;
     color: white;
 }
+
+.cadastrar a{
+    color: white;
+    text-decoration: none;
+}
 .descricao-box{
     margin-top: 20px;
     color: white;
@@ -156,7 +161,7 @@ body {
     font-size: small;
 }
 
-@keyframes fadeIN {
+@keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(-4px);
@@ -168,8 +173,13 @@ body {
 }
 
 .box p{
-    color: white;
+    color: #aaa;
 
+}
+
+.link_esqueceu a{
+    color: rgb(255, 102, 0);
+    text-decoration: none;
 }
 
 .rodape1{
