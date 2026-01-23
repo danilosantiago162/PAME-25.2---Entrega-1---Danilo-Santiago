@@ -1,6 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header{
     background-color: black;
-    padding: 12px;
+    padding: 20px;
 }
 
 footer{
@@ -24,7 +30,7 @@ body {
       linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
       url("Design sem nome (2).png");
 
-    background-size: 1150px;
+    background-size: 1200px;
     background-position: center;
     
     
@@ -52,8 +58,9 @@ body {
 .box {
 
     size: 200px;
-    align-items: center;
-    width: 280px;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 330px;
     
     background: rgba(0,0,0,0.85);
     padding: 30px;
@@ -71,7 +78,7 @@ body {
     border: none;
     background: #333;
     color: white;
-    width: 257px;
+    width: 100%;
     
 }
 
@@ -98,22 +105,34 @@ body {
 .opcao{
     display: flex;
     justify-content: flex-start;
+    width: 100%;
     font-size: 0.8rem;
     color: #ccc;
     align-items:center;
     
+    
+    
 }
 
 .opcao label {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+    width: auto;
     gap: 6px;
+    align-items: center;
     cursor: pointer;
+    
+    
 }
+
+.opcao span {
+    white-space: nowrap;
+}
+
 
 .cadastrar{
     width: 100%;
     color: white;
+    font-size: 14px;
 }
 
 .cadastrar a{
@@ -122,8 +141,10 @@ body {
 }
 .descricao-box{
     margin-top: 20px;
-    color: white;
+    color: #aaa;
     font-size: 0.9rem;
+    padding-top: 12px;
+    border-top: 0.5px solid #aaa;
 }
 
 .descricao-box summary {
@@ -134,12 +155,13 @@ body {
     display: none;
 }
 
+
 .descricao-toggle {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #aaa;
 }
 
 .descricao-toggle:hover {
@@ -158,7 +180,7 @@ body {
     margin-top: 10px;
     line-height: 1.5;
     animation: fadeIn 0.3s ease;
-    font-size: small;
+    font-size: 12px;
 }
 
 @keyframes fadeIn {
@@ -175,6 +197,11 @@ body {
 .box p{
     color: #aaa;
 
+}
+
+.link_esqueceu {
+    width: 100%;
+    text-align: center;
 }
 
 .link_esqueceu a{
