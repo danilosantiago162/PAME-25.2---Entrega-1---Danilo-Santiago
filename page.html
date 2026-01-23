@@ -18,59 +18,74 @@
             </div>
         </header>
 
+    
+    <main>
     <!--Tudo dentro do background ficará sobre a imagem escolhida-->
+        <div class="background">
 
-    <div class="background">
+            <!--box central contendo opções para login, cadastro, esqueceu a senha, lembre-se de mim e descrição-->
 
-        <!--box central contendo opções para login, cadastro, esqueceu a senha, lembre-se de mim e descrição-->
+            <div class="box">
 
-        <div class="box">
+                <!--Titulo Entrar-->
+                <h2 class="titulo">Entrar</h2>
 
-            <!--Titulo Entrar-->
-            <h2 class="titulo">Entrar</h2>
+                <!--Regiões para Login: email e senha-->
+                <input type="text" placeholder="Email ou número de celular">
+                <input type="password" placeholder="Senha">
 
-            <!--Regiões para Login: email e senha-->
-            <input type="text" placeholder="Email ou número de celular">
-            <input type="password" placeholder="Senha">
+                <!--Botão Entrar-->
+                <button>Entrar</button>
 
-            <!--Botão Entrar-->
-            <button>Entrar</button>
+                <!--div para opção: Lembrar de mim-->
+                <div class="opcao">
 
-            <!--div para opção: Lembrar de mim-->
-            <div class="opcao">
+                    <!--pequena box para confirmar opção: lembrar de mim-->
+                    <label>
+                        <input type="checkbox">
+                    </label>
 
-                <!--pequena box para confirmar opção: lembrar de mim-->
-                <label>
-                    <input type="checkbox">
-                </label>
+                    <!--div após para texto vir ao lado do checkbox-->
+                    <div>Lembre-se de mim</div>
+                </div>
 
-                <!--div após para texto vir ao lado do checkbox-->
-                <div>Lembre-se de mim</div>
-            </div>
+                <!--link no caso de esquecimento de senha-->
+                <a href="#">Esqueceu a senha?</a>
 
-            <!--link no caso de esquecimento de senha-->
-            <a href="#">Esqueceu a senha?</a>
-
-            <!--parágrafo seguido de link para cadastro-->
-            <p class="cadastrar">
-                Novo por aqui? <a href="#">Assine agora</a>
-            </p>
-
-            <!--descrição ao final do box-->
-            <details class="descricao-box">
-                <summary class="descricao-toggle">
-                    <span>Descrição</span>
-                    <span class="seta">▼</span>
-                </summary>
-
-                <p class="descricao-conteudo">
-                    A FLUXO TV é uma plataforma de streaming focada em conteúdos originais,
-                    transmissões ao vivo e experiências digitais interativas, conectando
-                    criadores e espectadores em um ecossistema moderno de entretenimento.
+                <!--parágrafo seguido de link para cadastro-->
+                <p class="cadastrar">
+                    Novo por aqui? <a href="#">Assine agora</a>
                 </p>
-            </details>
+
+                <!--descrição ao final do box-->
+                <details class="descricao-box">
+                    <summary class="descricao-toggle">
+                        <span>Descrição</span>
+                        <span class="seta">▼</span>
+                    </summary>
+
+                    <p class="descricao-conteudo">
+                        A FLUXO TV é uma plataforma de streaming focada em conteúdos originais,
+                        transmissões ao vivo e experiências digitais interativas, conectando
+                        criadores e espectadores em um ecossistema moderno de entretenimento.
+                    </p>
+                </details>
+            </div>
         </div>
-    </div>
-        
+    </main>
+
+    <footer>
+        <div class="rodape1">
+        <p>Dúvidas? Ligue 0800 000 0000</p>
+        </div>
+        <div class="rodape2">
+            <div class="link1">Perguntas Frenquentes</div>
+            <div class="link2">Central de Ajuda</div>
+            <div class="link3">Termos de uso</div>
+            <div class="link4">Privacidade</div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

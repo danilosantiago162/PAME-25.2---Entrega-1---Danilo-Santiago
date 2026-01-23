@@ -3,6 +3,11 @@ header{
     padding: 12px;
 }
 
+footer{
+    background-color: black;
+    padding:12px;
+    color: #aaa;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,15 +18,14 @@ body {
     justify-content: center;
     align-items: center;
 
-    position: fixed;
-    inset: 0;
+    min-height: calc(100vh - 100px);
+    
     background:
       linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
       url("Design sem nome (2).png");
 
     background-size: 1150px;
     background-position: center;
-    z-index: -1;
     
     
 }
@@ -29,18 +33,20 @@ body {
 .cabecalho {
     display: flex;
     flex-direction:row;
+    padding-left: 20px;
 }
 
 .fluxo {
     color: rgb(255, 102, 0);
     font-weight: 700;
-    font-size: larger;
+    font-size: 25px;
+
 }
 
 .tv {
     color:white;
     font-weight: 700;
-    font-size: larger;
+    font-size: 25px;
 }
 
 .box {
@@ -56,7 +62,7 @@ body {
     display: flex;
     flex-direction:column;
     gap: 12px;
-    font-size: small;
+    font-size: 12px;
 }
 
 .box input{
@@ -66,11 +72,11 @@ body {
     background: #333;
     color: white;
     width: 100%;
+    
 }
 
 .box input::placeholder{
     color:#aaa;
-    width: 100%;
 }
 
 .box button{
@@ -80,8 +86,8 @@ body {
     border-radius: 4px;
     font-weight: 700;
     cursor: pointer;
-    color: white;
-    width: 295px;
+    color: black;
+    width: 100%;
 }
 
 .titulo{
@@ -145,7 +151,7 @@ body {
 
 @keyframes fadeIN {
     from {
-        opacity: o;
+        opacity: 0;
         transform: translateY(-4px);
     }
     to {
@@ -157,6 +163,20 @@ body {
 .box p{
     color: white;
 
+}
+
+.rodape1{
+    font-size: 13px;
+    border-top: #f5f1f1;
+    padding-left: 20px;
+}
+
+.rodape2{
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    gap: 16px;
+    padding-left: 20px;
 }
 
 
