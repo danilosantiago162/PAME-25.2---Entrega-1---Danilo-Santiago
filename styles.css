@@ -19,7 +19,7 @@ body {
       linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
       url("Design sem nome (2).png");
 
-    background-size: 1200px;
+    background-size: 1150px;
     background-position: center;
     z-index: -1;
     
@@ -34,18 +34,20 @@ body {
 .fluxo {
     color: rgb(255, 102, 0);
     font-weight: 700;
+    font-size: larger;
 }
 
 .tv {
     color:white;
     font-weight: 700;
+    font-size: larger;
 }
 
 .box {
 
     size: 200px;
     align-items: center;
-    width: 300px;
+    width: 280px;
     
     background: rgba(0,0,0,0.85);
     padding: 30px;
@@ -54,6 +56,7 @@ body {
     display: flex;
     flex-direction:column;
     gap: 12px;
+    font-size: small;
 }
 
 .box input{
@@ -78,7 +81,7 @@ body {
     font-weight: 700;
     cursor: pointer;
     color: white;
-    width: 323px;
+    width: 295px;
 }
 
 .titulo{
@@ -137,6 +140,7 @@ body {
     margin-top: 10px;
     line-height: 1.5;
     animation: fadeIn 0.3s ease;
+    font-size: small;
 }
 
 @keyframes fadeIN {
@@ -146,7 +150,7 @@ body {
     }
     to {
         opacity: 1;
-        transform: tranlateY(0);
+        transform: translateY(0);
     }
 }
 
