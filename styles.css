@@ -1,14 +1,18 @@
+
+/*Remoção das margens padrões css em uma página web*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Header garantindo cor de fundo e padding correto*/
 header{
     background-color: black;
     padding: 20px;
 }
 
+/*Footer setado garantido espaçamento das bordas e linha horizontal atuando como divisória entre body e footer*/
 footer{
     background-color: black;
     color: #aaa;
@@ -16,34 +20,43 @@ footer{
     padding-top: 12px;
     padding-bottom: 12px;
 }
+
+/*Garante o padrão de fonte para todos textos dentro do body*/
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Plano de fundo*/
 .background {
 
+    /*centraliza todos conteúdos*/
     display: flex;
     justify-content: center;
     align-items: center;
 
+    /*Garante que o background não ultrapasse nem o header nem o footer*/
     min-height: calc(100vh - 100px);
     
+    /*Define a imagem e a torna fosca, conforme padrão mostrado*/
     background:
       linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
       url("Design sem nome (2).png");
 
+    /*Garante a aparição correta da logo, sem estar muito grande ou muito pequena*/  
     background-size: 1200px;
     background-position: center;
     
     
 }
 
+/*cabecalho em flexbox definido como row*/
 .cabecalho {
     display: flex;
     flex-direction:row;
     padding-left: 20px;
 }
 
+/*FLUXOTV no cabeçalho*/
 .fluxo {
     color: rgb(255, 102, 0);
     font-weight: 700;
@@ -51,12 +64,14 @@ body {
 
 }
 
+/*TV no cabeçalho*/
 .tv {
     color:white;
     font-weight: 700;
     font-size: 25px;
 }
 
+/*box central*/
 .box {
 
     size: 200px;
@@ -74,6 +89,14 @@ body {
     font-size: 12px;
 }
 
+/*Título Entrar*/
+.titulo{
+    text-align: center;
+    color: white;
+}
+
+
+/*inputs de email e senha*/
 .box input{
     padding: 12px;
     border-radius: 4px;
@@ -84,10 +107,12 @@ body {
     
 }
 
+/*Cor das letras dentro do input*/
 .box input::placeholder{
     color:#aaa;
 }
 
+/*Botão Entrar*/
 .box button{
     padding: 12px;
     background: rgb(255, 102, 0);
@@ -99,11 +124,7 @@ body {
     width: 100%;
 }
 
-.titulo{
-    text-align: center;
-    color: white;
-}
-
+/*Checkbox e texto "Lembre-se de mim", garantidos por .opcao e .opcao label*/
 .opcao{
     display: flex;
     justify-content: flex-start;
@@ -119,26 +140,28 @@ body {
     gap: 6px;
     align-items: center;
     cursor: pointer;
-    
-    
+   
 }
 
+/*Garante, junto com opções dentro de opcao e opcao label,
+ linha única no span "Lembre-se de mim e alinhamento correto da checkbox*/
 .opcao span {
     white-space: nowrap;
 }
-
-
+/*"Novo aqui?" garante alinhamento e padrão visual*/
 .cadastrar{
     width: 100%;
-    color: white;
+    color: #aaa;
     font-size: 14px;
 }
-
+/*Link para cadastro, garante padrão visual (branco e sem sublinho)*/
 .cadastrar a{
     color: white;
     text-decoration: none;
 }
+/*Início do campo descrição*/
 
+/*Aqui contém a cor, tamanho da letra na palavra "Descrição" e uma estratégia para deixar a linha menor que 1px*/
 .descricao-box{
     margin-top: 20px;
     color: #aaa;
@@ -147,13 +170,16 @@ body {
     border-top: 0.5px solid rgba(75, 74, 74, 0.15);
 
 }
+/*Garante personalização de seta*/
 .descricao-box summary {
     list-style: none;
 }
+/*Conserta possíveis duplicatas de setas em navegadores webkit*/
 .descricao-box::-webkit-details-marker {
     display: none;
 }
 
+/*container com texto "Descrição e ícone de seta"*/
 .descricao-toggle {
     cursor: pointer;
     display: flex;
@@ -162,25 +188,29 @@ body {
     color: #aaa;
 }
 
+/*Muda de cor ao passar o mouse por cima, reforça interatividade*/
 .descricao-toggle:hover {
     color: #fff;
 }
 
+/*garante a rotação suave*/
 .seta {
     transition: transform 0.3s ease;
 }
 
+/*Indica quando o <details> está aberto, a seta gira 180°, garantindo maior experiencia de usuário*/
 .descricao-box[open] .seta{
     transform: rotate(180deg);
+    animation: fadeIn 1s ease;
 }
 
+/*Texto que aparece ao abrir "Descrição"*/
 .descricao-conteudo {
     margin-top: 10px;
     line-height: 1.5;
-    animation: fadeIn 0.3s ease;
     font-size: 12px;
 }
-
+/*Ideia de garantir mais experiencia de usuário através de transições mais suavizadas*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -192,27 +222,25 @@ body {
     }
 }
 
-.box p{
-    color: #aaa;
-
-}
-
+/*Contralização do link esqueceu senha*/
 .link_esqueceu {
     width: 100%;
     text-align: center;
 }
-
+/*Definição de cor e remoção de sublinho no link*/
 .link_esqueceu a{
     color: rgb(255, 102, 0);
     text-decoration: none;
 }
 
+/*Primeira linha do rodapé*/
 .rodape1{
     font-size: 13px;
     padding-left: 20px;
     padding-bottom: 4px;
 }
 
+/*Segunda linha do rodapé*/
 .rodape2{
     display: flex;
     flex-direction: row;
