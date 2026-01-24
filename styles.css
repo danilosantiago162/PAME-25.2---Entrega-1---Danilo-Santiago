@@ -45,6 +45,8 @@ body {
     /*Garante a aparição correta da logo, sem estar muito grande ou muito pequena*/  
     background-size: 1200px;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
     
     
 }
